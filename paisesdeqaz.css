@@ -1,0 +1,86 @@
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    margin: 0;
+    padding: 0;
+    background-color: #c1bbc7;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+}
+
+#menu {
+    width: 100%; /* Faz o menu ocupar toda a largura da tela */
+    background-image: linear-gradient(to bottom right, #c1bbc7, #c1bbc7);
+    padding: 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Garante que o menu fique acima de outros elementos */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    padding: 7px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.6s, color 0.6s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #011E36;
+    color: #c1bbc7;
+}
+
+nav ul li.active a {
+    background-color: #011E36;
+    color: #c1bbc7;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajusta a largura mínima das colunas */
+    gap: 20px;
+    width: 100%; /* Faz a container ocupar toda a largura disponível */
+    padding: 20px;
+}
+
+.menu1 {
+    width: 250px; /* Reduzi a largura das caixas */
+    margin: 15px; /* Ajuste da margem */
+    padding: 15px; /* Mantive o padding */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 14px; /* Tamanho da fonte ajustado */
+}
+
+h1 {
+    font-size: 18px; /* Ajusta o tamanho da fonte dos títulos */
+}
+
+h2 {
+    font-size: 16px; /* Ajusta o tamanho da fonte das descrições */
+}
